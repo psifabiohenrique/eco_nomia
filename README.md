@@ -1,0 +1,4 @@
+# Eco-nomia
+
+Este é o projeto de conclusão da disciplina de Algoritmos e Programação de Computadores (APC), do curso de computação da Universidade de Brasília (UnB).
+Visando reduzir o consumo elétrico e de água dos grandes datacenters que processam os inputs de inteligências Artificiais, este projeto tem como objetivo desenvolver um software para reduzir o total de tokens enviados para os grandes modelos de IA processarem e consequentemente reduzir o consumo elétrico e de água. O software utiliza um modelo de IA menor e local, para recriar o input, reduzindo o total de tokens. Após isso, ambos os inputs são submetidos para um grande modelo de IA, para que o usuário possa comparar as respostas produzidas e é realizado o cálculo de tokens submetidos, bem como o provável consumo gerado pelos servidores, através de dados médios.

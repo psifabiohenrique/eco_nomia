@@ -1,7 +1,7 @@
 # Eco-nomia
 
 Este é o projeto de conclusão da disciplina de Algoritmos e Programação de Computadores (APC), do curso de computação da Universidade de Brasília (UnB).
-Visando reduzir o consumo elétrico e de água dos grandes datacenters que processam os inputs de inteligências Artificiais, este projeto tem como objetivo desenvolver um software para reduzir o total de tokens enviados para os grandes modelos de IA processarem e consequentemente reduzir o consumo elétrico e de água. O software utiliza um modelo de IA menor e local, para recriar o input, reduzindo o total de tokens. Após isso, ambos os inputs são submetidos para um grande modelo de IA, para que o usuário possa comparar as respostas produzidas e é realizado o cálculo de tokens submetidos, bem como o provável consumo gerado pelos servidores, através de dados médios.
+Visando reduzir o consumo elétrico e de água dos grandes datacenters que processam os inputs de inteligências Artificiais, este projeto tem como objetivo desenvolver um software para reduzir o total de tokens processados pelos grandes modelos de IA e consequentemente reduzir o consumo elétrico e de água. O software utiliza um modelo de IA menor e local, para recriar o input, reduzindo o total de tokens. Após isso, ambos os inputs são submetidos para um grande modelo de IA, para que o usuário possa comparar as respostas produzidas e é realizado o cálculo de tokens submetidos e recebidos, bem como o provável consumo gerado pelos servidores, através de dados médios.
 
 
 ## Instruções para inicializar o projeto
@@ -11,8 +11,8 @@ Visando reduzir o consumo elétrico e de água dos grandes datacenters que proce
     1. Baixe e instale o git através do link: https://git-scm.com/downloads
     2. Configuração do git:
         ```bash
-        git config user.name 'Seu Nome'
-        git config user.email 'seu_email@email.com'
+        git config user.name "Seu Nome"
+        git config user.email "seu_email@email.com"
         ```
     3. Clone o projeto para o seu computador
         1. abra o terminal
@@ -59,4 +59,23 @@ Visando reduzir o consumo elétrico e de água dos grandes datacenters que proce
     3. Instale as dependências do projeto
     ``` bash
     pip install -r requirements.txt
+    ```
+
+3. Instalando e iniciando o Ollama
+    1. Baixe e instale o [Ollama](https://ollama.com/download)
+    2. Baixe um modelo de IA pequeno (entre 1 e 8 bilhões de parâmetros)
+        *Pesquise por modelos em: [https://ollama.com/search](https://ollama.com/search)*
+        No terminal:
+        ```bash
+        ollama pull nome_do_modelo
+        ```
+        Inicialize o processo do ollama (caso não esteja inicializado)
+
+        ```bash
+        ollama serve
+        ```
+
+4. Executando o projeto
+    ```bash
+    python main.py
     ```

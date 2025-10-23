@@ -1,4 +1,4 @@
-# Eco-nomia
+# Chat Eco-nomico
 A revolução que os Grandes Modelos de Linguagem (LLM), estão produzindo, em muito se dá pela capacidade deles "lembrarem" o contexto do que estão falando (i.e., a instrução do usuário e o texto que ela já produziu). Isso acontece, pois as redes neurais que produzem os textos, funcionam recebendo um input e respondendo com o próximo token (cada token pode ser uma palavra ou uma parte de uma palavra) mais provável. Ele consegue "lembrar" o que ja foi dito e manter uma produção de texto coerente, graças à técnica de kv-caching, que retroalimenta a LLM após cada token ser gerado, com o input original e os tokens que já foram gerados.
 
 Está é uma técnica poderosa para produzir textos com alto nível de coerência, mas é pouco eficiente, com uma eficiencia de O(n(n+m), onde n é a resposta da LLM e m é o input do usuário.

@@ -1,19 +1,23 @@
 # Eco-nomia
+A revolução que os Grandes Modelos de Linguagem (LLM), estão produzindo, em muito se dá pela capacidade deles "lembrarem" o contexto do que estão falando (i.e., a instrução do usuário e o texto que ela já produziu). Isso acontece, pois as redes neurais que produzem os textos, funcionam recebendo um input e respondendo com o próximo token (cada token pode ser uma palavra ou uma parte de uma palavra) mais provável. Ele consegue "lembrar" o que ja foi dito e manter uma produção de texto coerente, graças à técnica de kv-caching, que retroalimenta a LLM após cada token ser gerado, com o input original e os tokens que já foram gerados.
 
-Este é o projeto de conclusão da disciplina de Algoritmos e Programação de Computadores (APC), do curso de computação da Universidade de Brasília (UnB).
-Visando reduzir o consumo elétrico e de água dos grandes datacenters que processam os inputs de inteligências Artificiais, este projeto tem como objetivo desenvolver um software para reduzir o total de tokens processados pelos grandes modelos de IA e consequentemente reduzir o consumo elétrico e de água. O software utiliza um modelo de IA menor e local, para recriar o input, reduzindo o total de tokens. Após isso, ambos os inputs são submetidos para um grande modelo de IA, para que o usuário possa comparar as respostas produzidas e é realizado o cálculo de tokens submetidos e recebidos, bem como o provável consumo gerado pelos servidores, através de dados médios.
+Está é uma técnica poderosa para produzir textos com alto nível de coerência, mas é pouco eficiente, com uma eficiencia de O(n(n+m), onde n é a resposta da LLM e m é o input do usuário.
+
+Visando reduzir o consumo elétrico e de água dos grandes datacenters que processam os inputs de inteligências Artificiais, este projeto tem como objetivo desenvolver um software para reduzir o total de tokens processados pelas LLMs e consequentemente reduzir o consumo elétrico e de água. O software utiliza um LLM menor e local, para recriar o input, reduzindo o total de tokens de entrada. Após isso, ambos os inputs são submetidos para uma LLM disponível em grandes datacentes, para que o usuário possa comparar as respostas produzidas e é realizado o cálculo de tokens submetidos e recebidos, bem como o provável consumo gerado pelos servidores, através de dados médios.
+
+O projeto utiliza o tkinter para construir uma interface de usuário que irá receber um input de texto, processar esse input com uma IA local e enviar esse input para a API do Google GEMINI. Após receber a resposta, a interface gráfica será atualizada com o input processado e a resposta do GEMINI para que o usuário possa ver o resultado. Junto da resposta, será feito o cálculo de total de tokens do input do usuário, do input gerado pela IA local e da resposta do GEMINI e a partir disso gerar um gráfico exibindo a diferença de consumo devido à mudança de input, utilizando o matplotlib.
 
 
 ## Planejamento do trabalho
 
-- Construir interface Gráfica
-    Danielle
-- Construir modelo de IA menor e local
-    Fábio
-- Construir prompts para redução de tokens
-    Matheus
-- Construir cálculos de consumo
-    Ingrid
+- Construir interface Gráfica:
+    **Danielle**
+- Construir modelo de IA menor e local:
+    **Fábio**
+- Construir prompts para redução de tokens:
+    **Matheus**
+- Construir cálculos de consumo:
+    **Ingrid**
 
 ## Instruções para inicializar o projeto
 

@@ -4,6 +4,17 @@ Este é o projeto de conclusão da disciplina de Algoritmos e Programação de C
 Visando reduzir o consumo elétrico e de água dos grandes datacenters que processam os inputs de inteligências Artificiais, este projeto tem como objetivo desenvolver um software para reduzir o total de tokens processados pelos grandes modelos de IA e consequentemente reduzir o consumo elétrico e de água. O software utiliza um modelo de IA menor e local, para recriar o input, reduzindo o total de tokens. Após isso, ambos os inputs são submetidos para um grande modelo de IA, para que o usuário possa comparar as respostas produzidas e é realizado o cálculo de tokens submetidos e recebidos, bem como o provável consumo gerado pelos servidores, através de dados médios.
 
 
+## Planejamento do trabalho
+
+- Construir interface Gráfica
+    Danielle
+- Construir modelo de IA menor e local
+    Fábio
+- Construir prompts para redução de tokens
+    Matheus
+- Construir cálculos de consumo
+    Ingrid
+
 ## Instruções para inicializar o projeto
 
 1. Instalação e configuração do git
